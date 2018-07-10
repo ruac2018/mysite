@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'python-heroku',
-        'USER': 'postgres',
-        'PASSWORD': 'Duendes678!',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'de9rbtoitu9mib',
+        'USER': 'rudiucnopvnfuy',
+        'PASSWORD': 'c6b6129c890e82fb24eeddfa8138db8deee9ba8fc2ec18b513e3d2777e6bc4ac',
+        'HOST': 'ec2-23-21-162-90.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
