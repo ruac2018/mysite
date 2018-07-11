@@ -75,7 +75,13 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
+DATABASE_URL = 'postgres://keizzzfksztgze:6e133b3ece92dd112be9c47ba109e25e41ba9087dd863d52510eec1f12fb6bbd@ec2-54-83-11-247.compute-1.amazonaws.com:5432/d8k6vo6ht5h6ru'
+
+DATABASES = {
+    'default': dj_database_url.config(
+        default=DATABASE_URL
+    )
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
